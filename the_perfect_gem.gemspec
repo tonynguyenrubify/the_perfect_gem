@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "the_perfect_gem"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tony Nguyen"]
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
+    ".DS_Store",
     ".document",
     "Gemfile",
     "Gemfile.lock",
@@ -24,9 +25,15 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "app/.DS_Store",
+    "app/assets/.DS_Store",
+    "app/assets/javascripts/jquery.tokeninput.js",
+    "app/controllers/hello_controller.rb",
+    "lib/generators/the_perfect_gem/install_generator.rb",
     "lib/the_perfect_gem.rb",
     "test/helper.rb",
-    "test/test_the_perfect_gem.rb"
+    "test/test_the_perfect_gem.rb",
+    "the_perfect_gem.gemspec"
   ]
   s.homepage = "http://github.com/tonynguyenrubify/the_perfect_gem"
   s.licenses = ["MIT"]
