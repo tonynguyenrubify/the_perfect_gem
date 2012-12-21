@@ -9,18 +9,25 @@ module ThePerfectGem
         copy_file '../../../app/assets/javascripts/jquery.tokeninput.js', "app/assets/javascripts/jquery.tokeninput.js"
       end
       
+      def copy_css
+        copy_file '../../../app/assets/stylesheets/token-input-facebook.css', "app/assets/stylesheets/token-input-facebook.css"
+        copy_file '../../../app/assets/stylesheets/token-input-mac.css', "app/assets/stylesheets/token-input-mac.css"
+        copy_file '../../../app/assets/stylesheets/token-input.css', "app/assets/stylesheets/token-input.css"
+      end
+      
       def inject_javascript
         append_to_file "app/assets/javascripts/application.js" do
           out = "\n"
           out << "//= require jquery.tokeninput"
-          out << %Q{
-jQuery	->
-	$('#book_author_tokens').tokenInput	'/authors.json'
-		theme:	'facebook'
-		prePopulate:	$('#book_author_tokens').data('load')
-}
         end
       end
+      
+      def inject_css
+        append_to_file "app/assets/stylesheets/application.css" do
+          out = "\n"
+          out << "/*= require token-input-facebook"
+        end  
+      end  
     end
   end
 end

@@ -1,5 +1,5 @@
 module ThePerfectGem
-  class Engine < Rails::Engine    
+  class Engine < Rails::Engine
     ActiveRecord::Base.instance_eval do
       def token_input(column_name)
         cattr_accessor :the_perfect_gem_token_input_field
