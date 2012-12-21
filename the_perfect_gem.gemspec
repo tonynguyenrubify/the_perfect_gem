@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tony Nguyen"]
-  s.date = "2012-12-20"
+  s.date = "2012-12-21"
   s.description = "TODO: longer description of your gem"
   s.email = "truonggiangcse@yahoo.com"
   s.extra_rdoc_files = [
@@ -28,7 +28,11 @@ Gem::Specification.new do |s|
     "app/.DS_Store",
     "app/assets/.DS_Store",
     "app/assets/javascripts/jquery.tokeninput.js",
+    "app/assets/stylesheets/token-input-facebook.css",
+    "app/assets/stylesheets/token-input-mac.css",
+    "app/assets/stylesheets/token-input.css",
     "app/controllers/hello_controller.rb",
+    "app/helpers/the_perfect_gem/helper.rb",
     "lib/generators/the_perfect_gem/install_generator.rb",
     "lib/the_perfect_gem.rb",
     "test/helper.rb",
